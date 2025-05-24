@@ -13,10 +13,8 @@ namespace MisalignedSpace {
             int i = 0, j = 0;
             List<string> colorMap = new List<string>();
             for (i = 0; i < 5; i++) {
-                for(j = 0; j < 5; j++) {
-                    //Console.WriteLine("{0} | {1} | {2}", i * 5 + j, majorColors[i], minorColors[i]);
-                    string formattedString = formatter.Format(i * 5 + j, majorColors[i], minorColors[i]);
-                    //FormatAndPrint(i * 5 + j, majorColors[i], minorColors[i]);
+                for(j = 0; j < 5; j++) {                    
+                    string formattedString = formatter.Format(i * 5 + j, majorColors[i], minorColors[i]);                    
                     colorMap.Add(formattedString);
                 }
             }
